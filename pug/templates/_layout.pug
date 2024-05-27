@@ -3,32 +3,16 @@ mjml
         mj-title Lettre Ecosup Assurance - Entreprise Mai 2024
         mj-attributes
             mj-all(font-family='Arial, Helvetica, sans-serif')/
-            mj-text(font-size='16px' color='#2D3748')/
-            mj-class(name='D_section' background-color='#ffffff' padding='20px 32px')/
-            mj-class(name='DText' font-size='16px' font-weight='300' line-height='20px' color='#2D3748')/
+            mj-text(font-size='16px' font-weight='300' line-height='20px' color='#2D3748')/
+        mj-raw.
+            <meta name="color-scheme" content="light"></meta>
+            <meta name="supported-color-schemes" content="light"></meta>
         mj-breakpoint(width='480px')/
         mj-style.
-            @media all and (max-width: 480px) {
-            .M_padding td{ 
-                padding-left: 32px !important;
-                padding-right: 32px !important;
-            }
-            .M_paddingHead td{
-                padding-left: 10px !important;
-                padding-right: 10px !important;
-            }
-            .M_paddingReset td{
-                padding-left: 0px !important;
-                padding-right: 0px !important;
-            }
-            .M_paddingRS td{
-                padding-bottom: 10px !important;
-                padding-right: 10px !important;
-                }
-            .M_paddingButton td{
-                padding-top: 20px;
-            }
-            }
+           .hover:hover td, .hover:hover a{
+             background-color: #684092 !important;
+           }
+            
     mj-body(background-color='#fcfcfc')
         block esa
             include ../includes/_esa
